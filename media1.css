@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img/cool_gaming_background_4k_by_skullbreaker000_dehn7hz-fullview.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page
+{   
+    background: transparent;
+    width: 420px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.page h1
+{
+    font-size: 37px;
+    text-align: center;
+}
+
+.page .input
+{
+    position: relative;
+    width: 113%;
+    height: 57px;
+    margin: 29px 0px;
+}
+
+.input input
+{
+     width: 72%;
+     height: 6%;
+     background: transparent;
+     border: none;
+     outline: none;
+     border: 2px solid rgba(255, 255, 255, .2);
+     border-radius: 40px;
+     font-family: "PT Serif", serif;
+     font-size: 16px;
+     color: #fff;
+     padding: 20px 45px 20px 20px;
+}
+
+.input input::placeholder
+{
+    color: #fff;
+}
+
+.input i
+{
+     position: absolute;
+     right: 20px;
+     top: 60%;
+     transform: translateY(-35%);
+     font-size: 20px;
+}
+
+.page .btn
+{
+    width: 61%;
+    height: 42px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    padding: 0px 1px;
+    margin: 0px 82px;
+}
+
+.page .btn:hover
+{
+    color: grey;
+}
+
+.copyright
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    font-family: 'Cabin', sans-serif;
+    background: transparent;
+    backdrop-filter: blur;
+    color:  grey;
+    font-size:14px ;
+    padding: 0px 24px;
+    margin: 24px 25px;
+}

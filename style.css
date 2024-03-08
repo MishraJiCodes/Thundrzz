@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar
+{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   position: sticky;
+   top: 0;
+   cursor: pointer ;
+}
+
+.logo
+{
+    display: flex;
+    background: transparent;
+  
+}
+
+.logo img{
+    height: 40px;
+    background: none;
+}
+
+.nav-list
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-list li
+{
+    list-style: none;
+    padding: 70px;
+    font-size: 18px;
+}
+
+.nav-list li a
+{
+  text-decoration: none;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.bg
+{
+    background: rgba(0, 0, 0, 0.7) url(img/pexels-photo-3165335.jpeg);
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+
+.Fsection
+{
+    height: 100vh;
+}
+
+.box-main
+{
+    max-width: 100%;
+    display:  flex;
+    justify-content: center; 
+    align-items: center;
+    color: white;
+    margin: auto;
+    height: 60%;
+}
+
+.fup
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head
+{
+    font-size: 53px;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+    justify-content: center;
+    padding-bottom: 43px;
+}
+
+.banner
+{
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    max-width: 70%;
+    padding-bottom: 43px;
+}
+
+.btn
+{
+    padding: 11px 41px;
+    border: 2px solid white;
+    border-radius: 81px;
+    font-size: 15px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    color: grey;
+}
+
+.body
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto; 
+    max-width: 90%;
+    font-family: 'Cabin', sans-serif;
+}
+
+.paras
+{
+    padding: 0px 59px;
+}
+
+.head1
+{
+    font-size: 45px;
+    padding: 16px 0px;
+}
+
+.about
+{
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.body1
+{
+   flex-direction: row-reverse;
+}
+
+.Image img
+{
+  border: 2px solid white;
+  border-radius: 24px;
+}
+
+.Image1 img
+{
+    border: 2px solid white;
+  border-radius: 24px;
+}
+
+.Image2 img{
+    height: 260px;
+ border: 2px solid white;
+  border-radius: 24px;
+}
+
+.contact
+{
+    background-color: grey;
+    height: 75vh;
+}
+
+.tc{
+   text-align: center;
+   font-family: 'Cabin', sans-serif;
+   padding-bottom: 6px;
+}
+
+.fo{
+    max-width: 61%;
+    margin: auto;
+}
+
+.fo input
+{
+    width: 100%;
+    padding: 6px 2px;
+    border: white;
+    border-radius: 13px;
+    margin-bottom: 17px
+}
+
+.fo textarea
+{
+    width: 100%;
+    padding: 6px 2px;
+    border-radius: 13px;
+    margin-bottom: 17px;
+    height: 128px;
+}
+
+.btn2
+{
+    padding: 11px 41px;
+    border: 2px solid white;
+    border-radius: 81px;
+    font-size: 15px;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn2:hover
+{
+    color: gray;
+}
+
+.copyright
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    font-family: 'Cabin', sans-serif;
+    background-color: black;
+    color:  grey;
+    font-size:14px ;
+}
+
+.burger
+{
+   display: none;
+   position: absolute;
+   cursor: pointer;
+   right: 5%;
+   top: 15px;
+}
+
+.line
+{
+    width: 20px;
+    background-color: white;
+    height: 2px;
+    margin: 4px -5px;
+}
+
+
+@media only screen and (max-width:1000px)
+{
+    .nav-list{
+    flex-direction:column;
+    }
+
+    .navbar
+    {
+        flex-direction: column;
+        height: 514tpx;
+        transition: all 0.5s ease-out;
+    }
+
+    .nav-list li {
+        list-style: none;
+        padding: 11px;
+        font-size: 18px;
+    }
+    .burger
+    {
+        display: block;
+       size: 90px;
+       margin: -10px -5px;
+    }
+
+    .hnav-resp
+    {
+        height: 40px;
+       
+    }
+
+    .vclass-resp
+    {
+        opacity: 0;
+        display: none;
+    }
+
+    .body
+    {
+      flex-direction:column-reverse;
+    }
+       
+     .Image img
+    {
+        border: 2px solid white;
+        border-radius: 24px;
+        width: 91%;
+        margin: 15px 22px;
+    }
+    .Image1 img
+    {    border: 2px solid white;
+        border-radius: 15px;
+        margin: 15px 22px;
+        width: 91%;
+    }
+
+     .Image2 img 
+    {
+        border: 2px solid white;
+        border-radius: 15px;
+        margin: 15px 22px;
+        width: 91%;
+    }
+
+    .head1
+    {
+        font-size: 18px;
+        padding: 16px 0px;
+    }
+
+    .about
+    {
+        font-size: 12px;
+        font-family: 'Nunito', sans-serif;
+    }
+     
+    .btn
+    {
+        padding: 10px 18px;
+        border: 2px solid white;
+        border-radius: 81px;
+        font-size: 10px;
+        background: none;
+        color: white;
+    }
+
+    .head {
+        font-size: 28px;
+       margin: 15px 40px;
+       align-items: center;
+      font-family: 'Cabin', sans-serif;
+      justify-content: center;
+       height: 43px;
+    }
+
+    .btn2
+    {
+        padding: 9px 33px;
+        border: 2px solid white;
+        border-radius: 81px;
+        font-size: 13px;
+    }
+    .banner{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    max-width: 70%;
+    padding: 13px 4px;
+    }
+
+    .contact
+    {
+        height: 110vh;
+    }
+
+    .tc {
+        text-align: center;
+        font-family: 'Cabin', sans-serif;
+        padding-bottom: 6px;
+        font-size: 23px;
+    }
+
+    .fo input {
+        width: 90%;
+        padding: 6px 2px;
+        border: white;
+        border-radius: 13px;
+        margin-bottom: 17px;
+    }
+
+    .fo textarea {
+        width: 90%;
+        padding: 6px 2px;
+        border-radius: 13px;
+        margin-bottom: 17px;
+        height: 128px;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        font-family: 'Cabin', sans-serif;
+        background-color: black;
+        color: grey;
+        font-size: 10px;
+    }
+    
+}
